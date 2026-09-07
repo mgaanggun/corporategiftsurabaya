@@ -1,0 +1,208 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  position: relative;
+  padding: 48px 0 60px 0;
+  background-color: var(--background-color);
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/construction/showcase-5.webp");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.05;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-content {
+    margin-bottom: 30px;
+
+    .subtitle {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+      position: relative;
+      padding-left: 25px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 15px;
+        height: 2px;
+        background-color: var(--accent-color);
+        transform: translateY(-50%);
+      }
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+
+      @media (max-width: 992px) {
+        font-size: 36px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 32px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+    }
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 14px 32px;
+      background-color: var(--accent-color);
+      color: var(--contrast-color);
+      border-radius: 4px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: color-mix(in srgb, var(--accent-color), black 15%);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .btn-secondary {
+      display: inline-block;
+      padding: 14px 32px;
+      background-color: transparent;
+      color: var(--default-color);
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
+      border-radius: 4px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+        border-color: var(--default-color);
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  .trust-badges {
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .badge-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      i {
+        font-size: 32px;
+        color: var(--accent-color);
+      }
+
+      .badge-text {
+        display: flex;
+        flex-direction: column;
+
+        .count {
+          font-size: 24px;
+          font-weight: 700;
+          color: var(--heading-color);
+          line-height: 1;
+        }
+
+        .label {
+          font-size: 14px;
+          color: color-mix(in srgb, var(--default-color), transparent 30%);
+        }
+      }
+    }
+  }
+
+  .hero-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.5s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+
+    .image-badge {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      background-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 15px 20px;
+      border-radius: 4px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+      span {
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding: 35px 0 50px 0;
+
+    .hero-content {
+      margin-bottom: 35px;
+    }
+  }
+}

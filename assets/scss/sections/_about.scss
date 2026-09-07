@@ -1,0 +1,299 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about {
+  position: relative;
+
+  .about-content {
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.5rem;
+        width: 80px;
+        height: 4px;
+        background-color: var(--accent-color);
+      }
+    }
+
+    .lead {
+      font-size: 1.15rem;
+      margin-bottom: 1.5rem;
+      color: color-mix(in srgb, var(--heading-color), transparent 10%);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+  }
+
+  .achievement-boxes {
+    .achievement-box {
+      background-color: var(--surface-color);
+      border-left: 4px solid var(--accent-color);
+      padding: 1.2rem;
+      height: 100%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.3rem;
+        color: var(--accent-color);
+      }
+
+      p {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .trust-features {
+    margin-top: 1.25rem;
+
+    .trust-feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .trust-feature-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--surface-color);
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(20, 82, 157, 0.12);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--heading-color);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        border-color: var(--accent-color);
+        box-shadow: 0 4px 12px rgba(20, 82, 157, 0.1);
+      }
+
+      i {
+        color: var(--accent-color);
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .cta-container {
+    .btn-primary {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 0.75rem 1.5rem;
+      font-weight: 500;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: color-mix(in srgb, var(--accent-color), #000 10%);
+        border-color: color-mix(in srgb, var(--accent-color), #000 10%);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px color-mix(in srgb, var(--accent-color), transparent 70%);
+      }
+    }
+  }
+
+  .about-images-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 15px;
+
+    .main-image-box {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 16px 36px rgba(16, 42, 73, 0.12);
+      background: #ffffff;
+
+      .main-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.5s ease;
+      }
+
+      &:hover .main-img {
+        transform: scale(1.04);
+      }
+    }
+
+    .floating-experience-badge {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      background: rgba(20, 82, 157, 0.95);
+      backdrop-filter: blur(8px);
+      color: #ffffff;
+      padding: 8px 16px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 20px rgba(20, 82, 157, 0.3);
+      z-index: 3;
+
+      .badge-icon {
+        font-size: 20px;
+        color: #fbbf24;
+        line-height: 1;
+      }
+
+      .badge-content {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .badge-number {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.1;
+      }
+
+      .badge-title {
+        font-size: 11px;
+        opacity: 0.9;
+      }
+    }
+
+    .secondary-images-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .secondary-image-box {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+      background: #ffffff;
+
+      .secondary-img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.5s ease;
+      }
+
+      &:hover .secondary-img {
+        transform: scale(1.06);
+      }
+
+      .img-label {
+        position: absolute;
+        bottom: 8px;
+        left: 8px;
+        right: 8px;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(6px);
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--heading-color);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+
+        i {
+          color: var(--accent-color);
+          font-size: 13px;
+        }
+      }
+    }
+
+    .floating-trust-badge {
+      position: absolute;
+      bottom: 12px;
+      right: 0px;
+      background: #ffffff;
+      border: 1px solid rgba(20, 82, 157, 0.15);
+      padding: 10px 16px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 12px 30px rgba(16, 42, 73, 0.15);
+      z-index: 4;
+
+      i {
+        font-size: 24px;
+        color: #059652;
+      }
+
+      .trust-text {
+        display: flex;
+        flex-direction: column;
+
+        strong {
+          font-size: 12px;
+          color: var(--heading-color);
+          line-height: 1.2;
+        }
+
+        span {
+          font-size: 10px;
+          color: #64748b;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .about-images-wrapper {
+      margin-top: 2rem;
+
+      .floating-trust-badge {
+        position: static;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .achievement-boxes {
+      .achievement-box {
+        padding: 1rem;
+
+        h3 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

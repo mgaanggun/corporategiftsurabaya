@@ -1,0 +1,48 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Global Header
+--------------------------------------------------------------*/
+.header {
+  --background-color: #ffffff;
+  color: var(--default-color);
+  transition: all 0.3s ease;
+  z-index: 997;
+  background-color: var(--background-color);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+  .branding {
+    min-height: 64px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    line-height: 1;
+    text-decoration: none;
+
+    img {
+      max-height: 34px;
+      margin-right: 8px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+      font-weight: 800;
+      color: var(--heading-color);
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+
+      span {
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  .scrolled & {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    border-bottom-color: transparent;
+  }
+}

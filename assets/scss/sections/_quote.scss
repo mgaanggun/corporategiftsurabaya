@@ -1,0 +1,240 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Quote Section
+--------------------------------------------------------------*/
+.quote {
+  .quote-form-container {
+    background: var(--surface-color);
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .quote-info {
+    background: linear-gradient(135deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), #000 20%) 100%);
+    padding: 60px 40px;
+    color: var(--contrast-color);
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+
+    @media (max-width: 992px) {
+      padding: 40px 30px;
+    }
+
+    .quote-content {
+      width: 100%;
+    }
+
+    h3 {
+      color: var(--contrast-color);
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    >p {
+      color: color-mix(in srgb, var(--contrast-color), transparent 15%);
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+  }
+
+  .contact-items {
+    margin-bottom: 30px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background: color-mix(in srgb, var(--contrast-color), transparent 85%);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+
+      i {
+        font-size: 20px;
+        color: var(--contrast-color);
+      }
+    }
+
+    .contact-details {
+      h4 {
+        color: var(--contrast-color);
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      p {
+        color: color-mix(in srgb, var(--contrast-color), transparent 15%);
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+  }
+
+  .trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      background: color-mix(in srgb, var(--contrast-color), transparent 85%);
+      padding: 10px 15px;
+      border-radius: 25px;
+
+      i {
+        color: var(--contrast-color);
+        font-size: 16px;
+        margin-right: 8px;
+      }
+
+      span {
+        color: var(--contrast-color);
+        font-size: 13px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .quote-form-wrapper {
+    padding: 60px 40px;
+
+    @media (max-width: 992px) {
+      padding: 40px 30px;
+    }
+  }
+
+  .form-header {
+    margin-bottom: 30px;
+
+    h4 {
+      color: var(--heading-color);
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  .php-email-form {
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 14px 18px;
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+      border-radius: 8px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      color: var(--default-color);
+      background-color: var(--surface-color);
+
+      &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color), transparent 85%);
+      }
+
+      &::placeholder {
+        color: color-mix(in srgb, var(--default-color), transparent 50%);
+      }
+    }
+
+    select {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      background-size: 16px;
+      padding-right: 50px;
+      appearance: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button[type="submit"] {
+      background: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 14px 40px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: color-mix(in srgb, var(--accent-color), #000 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 60%);
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .quote-info {
+      text-align: center;
+
+      .contact-items {
+        max-width: 400px;
+        margin: 30px auto;
+      }
+
+      .trust-badges {
+        justify-content: center;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .quote-form-container {
+      border-radius: 10px;
+    }
+
+    .quote-info {
+      padding: 30px 20px;
+
+      h3 {
+        font-size: 24px;
+      }
+    }
+
+    .quote-form-wrapper {
+      padding: 30px 20px;
+    }
+
+    .form-header h4 {
+      font-size: 20px;
+    }
+  }
+}
