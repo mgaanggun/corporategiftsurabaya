@@ -1,0 +1,50 @@
+# Robots.txt for Corporate Gift Surabaya
+# Production Domain: https://corporategiftsurabaya.web.id
+
+User-agent: *
+Allow: /
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+Allow: /assets/vendor/
+
+# AI Crawlers & Search Engine Bots (AEO & GEO Optimization)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Disallow internal form processors or temporary files
+Disallow: /forms/
+Disallow: /starter-page.html
+
+# Sitemap Location
+Sitemap: https://corporategiftsurabaya.web.id/sitemap.xml
