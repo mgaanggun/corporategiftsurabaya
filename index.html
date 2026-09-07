@@ -48,14 +48,17 @@
   <link rel="preload" as="image" href="assets/img/hero/hero-home.webp" fetchpriority="high">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Lato:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Lato:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"></noscript>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet"></noscript>
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="assets/vendor/aos/aos.css" rel="stylesheet"></noscript>
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"></noscript>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -182,7 +185,7 @@
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <div class="logo d-flex align-items-center">
-          <img src="assets/img/logo.png" alt="CorporateGift Surabaya">
+          <img src="assets/img/logo.webp" alt="CorporateGift Surabaya">
           <h1 class="sitename">Corporate<span>Gift</span>Surabaya</h1>
         </div>
 
@@ -202,7 +205,7 @@
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Kontak</a></li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list" role="button" aria-label="Buka Menu" aria-expanded="false" tabindex="0"></i>
         </nav>
 
       </div>
@@ -267,7 +270,7 @@
                 </div>
               </div>
 
-              <img src="assets/img/hero/hero-home.webp" alt="Corporate Gift Surabaya Showcase" class="hero-main-img">
+              <img src="assets/img/hero/hero-home.webp" alt="Corporate Gift Surabaya Showcase" class="hero-main-img" fetchpriority="high" decoding="sync">
 
               <div class="hero-floating-card card-bottom">
                 <i class="bi bi-truck text-primary"></i>
@@ -293,7 +296,7 @@
           <div class="col-lg-6">
             <div class="about-images-wrapper" data-aos="fade-right" data-aos-delay="200">
               <div class="main-image-box">
-                <img src="assets/img/about/about-1.webp" alt="Executive Corporate Gift Surabaya" class="img-fluid main-img">
+                <img src="assets/img/about/about-1.webp" alt="Executive Corporate Gift Surabaya" class="img-fluid main-img" loading="lazy" decoding="async">
                 <div class="floating-experience-badge">
                   <div class="badge-icon"><i class="bi bi-award-fill"></i></div>
                   <div class="badge-content">
@@ -305,13 +308,13 @@
 
               <div class="secondary-images-row">
                 <div class="secondary-image-box">
-                  <img src="assets/img/about/about-2.webp" alt="Pengemasan Souvenir Eksklusif" class="img-fluid secondary-img">
+                  <img src="assets/img/about/about-2.webp" alt="Pengemasan Souvenir Eksklusif" class="img-fluid secondary-img" loading="lazy" decoding="async">
                   <div class="img-label">
                     <i class="bi bi-box-seam"></i> Custom Packaging
                   </div>
                 </div>
                 <div class="secondary-image-box">
-                  <img src="assets/img/about/about-3.webp" alt="Konsultasi Souvenir Kantor" class="img-fluid secondary-img">
+                  <img src="assets/img/about/about-3.webp" alt="Konsultasi Souvenir Kantor" class="img-fluid secondary-img" loading="lazy" decoding="async">
                   <div class="img-label">
                     <i class="bi bi-person-check"></i> Tim Konsultan
                   </div>
@@ -505,7 +508,7 @@
             <article class="blog-card">
               <div class="blog-card-img">
                 <a href="tips-memilih-corporate-gift-set-mewah.html">
-                  <img src="assets/img/blog/tips-memilih-corporate-1.webp" alt="7 Tips Memilih Corporate Gift Set Mewah">
+                  <img src="assets/img/blog/tips-memilih-corporate-1.webp" alt="7 Tips Memilih Corporate Gift Set Mewah" loading="lazy" decoding="async">
                 </a>
                 <span class="blog-card-category">Executive Gift Set</span>
               </div>
@@ -530,7 +533,7 @@
             <article class="blog-card">
               <div class="blog-card-img">
                 <a href="tren-merchandise-ramah-lingkungan-surabaya.html">
-                  <img src="assets/img/blog/merchandise-ramah-lingkungan-1.webp" alt="Tren Merchandise Ramah Lingkungan (Eco-Friendly) di Surabaya">
+                  <img src="assets/img/blog/merchandise-ramah-lingkungan-1.webp" alt="Tren Merchandise Ramah Lingkungan (Eco-Friendly) di Surabaya" loading="lazy" decoding="async">
                 </a>
                 <span class="blog-card-category">Corporate Merchandise</span>
               </div>
@@ -555,7 +558,7 @@
             <article class="blog-card">
               <div class="blog-card-img">
                 <a href="studi-kasus-pengadaan-seminar-kit-unair.html">
-                  <img src="assets/img/blog/seminar-kit-dies-1.webp" alt="Studi Kasus: Pengadaan 3.000 Seminar Kit Dies Natalis UNAIR">
+                  <img src="assets/img/blog/seminar-kit-dies-1.webp" alt="Studi Kasus: Pengadaan 3.000 Seminar Kit Dies Natalis UNAIR" loading="lazy" decoding="async">
                 </a>
                 <span class="blog-card-category">Seminar &amp; Event Kit</span>
               </div>
@@ -870,11 +873,11 @@
 
           <!-- Navigation & Pagination Controls -->
           <div class="testimonials-nav-container">
-            <div class="testi-nav-btn testi-prev" title="Testimoni Sebelumnya">
+            <div class="testi-nav-btn testi-prev" title="Testimoni Sebelumnya" role="button" aria-label="Testimoni Sebelumnya" tabindex="0">
               <i class="bi bi-arrow-left"></i>
             </div>
             <div class="swiper-pagination"></div>
-            <div class="testi-nav-btn testi-next" title="Testimoni Berikutnya">
+            <div class="testi-nav-btn testi-next" title="Testimoni Berikutnya" role="button" aria-label="Testimoni Berikutnya" tabindex="0">
               <i class="bi bi-arrow-right"></i>
             </div>
           </div>
@@ -916,7 +919,7 @@
           </div>
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="badge-highlight">
-              <img src="assets/img/construction/badge-5.webp" alt="Jaminan Kualitas Terbaik" class="img-fluid">
+              <img src="assets/img/construction/badge-5.webp" alt="Jaminan Kualitas Terbaik" class="img-fluid" loading="lazy" decoding="async">
               <div class="badge-content">
                 <h4>Vendor Souvenir Terverifikasi</h4>
                 <p>Dipercaya oleh ratusan instansi pemerintah, BUMN, dan korporasi multinasional</p>
@@ -929,7 +932,7 @@
 
           <div class="cert-card" data-aos="flip-left" data-aos-delay="100">
             <div class="cert-icon">
-              <img src="assets/img/construction/badge-1.webp" alt="ISO 9001" class="img-fluid">
+              <img src="assets/img/construction/badge-1.webp" alt="ISO 9001" class="img-fluid" loading="lazy" decoding="async">
             </div>
             <div class="cert-details">
               <h5>ISO 9001:2015</h5>
@@ -940,7 +943,7 @@
 
           <div class="cert-card" data-aos="flip-left" data-aos-delay="200">
             <div class="cert-icon">
-              <img src="assets/img/construction/badge-2.webp" alt="Mesin Presisi" class="img-fluid">
+              <img src="assets/img/construction/badge-2.webp" alt="Mesin Presisi" class="img-fluid" loading="lazy" decoding="async">
             </div>
             <div class="cert-details">
               <h5>Mesin Grafir Laser Presisi</h5>
@@ -951,7 +954,7 @@
 
           <div class="cert-card" data-aos="flip-left" data-aos-delay="300">
             <div class="cert-icon">
-              <img src="assets/img/construction/badge-3.webp" alt="Legalitas Resmi" class="img-fluid">
+              <img src="assets/img/construction/badge-3.webp" alt="Legalitas Resmi" class="img-fluid" loading="lazy" decoding="async">
             </div>
             <div class="cert-details">
               <h5>Legalitas Badan Usaha Resmi</h5>
@@ -962,7 +965,7 @@
 
           <div class="cert-card" data-aos="flip-left" data-aos-delay="400">
             <div class="cert-icon">
-              <img src="assets/img/construction/badge-4.webp" alt="Bahan Ramah Lingkungan" class="img-fluid">
+              <img src="assets/img/construction/badge-4.webp" alt="Bahan Ramah Lingkungan" class="img-fluid" loading="lazy" decoding="async">
             </div>
             <div class="cert-details">
               <h5>Eco-Friendly Material</h5>
@@ -973,7 +976,7 @@
 
           <div class="cert-card" data-aos="flip-left" data-aos-delay="500">
             <div class="cert-icon">
-              <img src="assets/img/construction/badge-6.webp" alt="Garansi 100%" class="img-fluid">
+              <img src="assets/img/construction/badge-6.webp" alt="Garansi 100%" class="img-fluid" loading="lazy" decoding="async">
             </div>
             <div class="cert-details">
               <h5>Garansi 100% Retur Cacat</h5>
@@ -984,7 +987,7 @@
 
           <div class="cert-card" data-aos="flip-left" data-aos-delay="600">
             <div class="cert-icon">
-              <img src="assets/img/construction/badge-7.webp" alt="Kapasitas Besar" class="img-fluid">
+              <img src="assets/img/construction/badge-7.webp" alt="Kapasitas Besar" class="img-fluid" loading="lazy" decoding="async">
             </div>
             <div class="cert-details">
               <h5>Kapasitas Produksi Besar</h5>
@@ -1048,7 +1051,7 @@
           <!-- Member 1: Anggunly -->
           <div class="team-simple-card" data-aos="fade-up" data-aos-delay="100">
             <div class="team-simple-photo">
-              <img src="assets/img/person/anggunly.webp" class="img-fluid" alt="Anggunly">
+              <img src="assets/img/person/anggunly.webp" class="img-fluid" alt="Anggunly" loading="lazy" decoding="async">
             </div>
             <div class="team-simple-info">
               <h4>Anggunly</h4>
@@ -1059,7 +1062,7 @@
           <!-- Member 2: Hawa -->
           <div class="team-simple-card" data-aos="fade-up" data-aos-delay="200">
             <div class="team-simple-photo">
-              <img src="assets/img/person/hawa.webp" class="img-fluid" alt="Hawa">
+              <img src="assets/img/person/hawa.webp" class="img-fluid" alt="Hawa" loading="lazy" decoding="async">
             </div>
             <div class="team-simple-info">
               <h4>Hawa</h4>
@@ -1070,7 +1073,7 @@
           <!-- Member 3: Indriana -->
           <div class="team-simple-card" data-aos="fade-up" data-aos-delay="300">
             <div class="team-simple-photo">
-              <img src="assets/img/person/indriana.webp" class="img-fluid" alt="Indriana">
+              <img src="assets/img/person/indriana.webp" class="img-fluid" alt="Indriana" loading="lazy" decoding="async">
             </div>
             <div class="team-simple-info">
               <h4>Indriana</h4>
@@ -1132,22 +1135,26 @@
                   <div class="row g-3">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <input type="text" name="name" class="form-control" placeholder="Nama Lengkap / Instansi" required="">
+                        <label for="cta-name" class="visually-hidden">Nama Lengkap / Instansi</label>
+                        <input type="text" id="cta-name" name="name" class="form-control" placeholder="Nama Lengkap / Instansi" required="">
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <input type="email" name="email" class="form-control" placeholder="Alamat Email Kantor" required="">
+                        <label for="cta-email" class="visually-hidden">Alamat Email Kantor</label>
+                        <input type="email" id="cta-email" name="email" class="form-control" placeholder="Alamat Email Kantor" required="">
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="form-group">
-                        <input type="tel" name="phone" class="form-control" placeholder="No. WhatsApp / Telepon" required="">
+                        <label for="cta-phone" class="visually-hidden">No. WhatsApp / Telepon</label>
+                        <input type="tel" id="cta-phone" name="phone" class="form-control" placeholder="No. WhatsApp / Telepon" required="">
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="form-group">
-                        <select name="type" class="form-control" required="">
+                        <label for="cta-type" class="visually-hidden">Pilih Jenis Souvenir</label>
+                        <select id="cta-type" name="type" class="form-control" required="">
                           <option value="">Pilih Jenis Souvenir</option>
                           <option value="executive">Executive Gift Set &amp; Hampers</option>
                           <option value="seminar">Seminar &amp; Training Kit</option>
@@ -1159,7 +1166,8 @@
                     </div>
                     <div class="col-12">
                       <div class="form-group">
-                        <textarea name="message" class="form-control" rows="4" placeholder="Detail Kebutuhan - Tuliskan jumlah pemesanan, deadline acara, dan kebutuhan logo..." required=""></textarea>
+                        <label for="cta-message" class="visually-hidden">Detail Kebutuhan</label>
+                        <textarea id="cta-message" name="message" class="form-control" rows="4" placeholder="Detail Kebutuhan - Tuliskan jumlah pemesanan, deadline acara, dan kebutuhan logo..." required=""></textarea>
                       </div>
                     </div>
                   </div>
@@ -1244,11 +1252,11 @@
           </a>
           <p>Pusat pengadaan souvenir kantor, merchandise promosi, seminar kit, dan corporate hampers terpercaya di Surabaya. Menghadirkan solusi cinderamata berkelas dengan pengerjaan presisi dan pengiriman tepat waktu.</p>
           <div class="social-links d-flex mt-4">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" title="TikTok"><i class="bi bi-tiktok"></i></a>
-            <a href="https://wa.me/6288989643555" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Ikuti Kami di Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Ikuti Kami di Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" title="TikTok" aria-label="Ikuti Kami di TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="https://wa.me/6288989643555" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="Hubungi via WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="Kunjungi LinkedIn Kami"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -1309,7 +1317,7 @@
   </a>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke Atas"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -1319,7 +1327,6 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

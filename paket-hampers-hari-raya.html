@@ -47,14 +47,15 @@
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Lato:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Lato:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"></noscript>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet"></noscript>
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="assets/vendor/aos/aos.css" rel="stylesheet"></noscript>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -127,7 +128,7 @@
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <div class="logo d-flex align-items-center">
-          <img src="assets/img/logo.png" alt="CorporateGift Surabaya">
+          <img src="assets/img/logo.webp" alt="CorporateGift Surabaya">
           <h1 class="sitename">Corporate<span>Gift</span>Surabaya</h1>
         </div>
 
@@ -147,7 +148,7 @@
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Kontak</a></li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list" role="button" aria-label="Buka Menu" aria-expanded="false" tabindex="0"></i>
         </nav>
 
       </div>
@@ -184,7 +185,7 @@
 
             <!-- Hero Image Gallery -->
             <div class="paket-detail-gallery" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/paket/hampers-hari-raya-eksekutif.webp" alt="Hampers Hari Raya Eksklusif (Idul Fitri / Natal / Imlek)" class="paket-detail-main-img">
+              <img src="assets/img/paket/hampers-hari-raya-eksekutif.webp" alt="Hampers Hari Raya Eksklusif (Idul Fitri / Natal / Imlek)" class="paket-detail-main-img" fetchpriority="high" decoding="sync">
             </div>
 
             <!-- Overview Card -->
@@ -400,7 +401,7 @@
                 
     <li class="mb-3">
       <a href="paket-merchandise-karyawan.html" class="d-flex align-items-center gap-3 text-dark text-decoration-none">
-        <img src="assets/img/paket/merchandise-karyawan-baru.webp" alt="Merchandise Karyawan Baru (Employee Onboarding Kit)" style="width: 60px; height: 50px; object-fit: cover; border-radius: 8px;">
+        <img src="assets/img/paket/merchandise-karyawan-baru.webp" alt="Merchandise Karyawan Baru (Employee Onboarding Kit)" style="width: 60px; height: 50px; object-fit: cover; border-radius: 8px;" loading="lazy" decoding="async">
         <div>
           <h6 class="mb-1" style="font-size: 0.9rem; font-weight: 700; color: #102a49;">Merchandise Karyawan Baru (Employee Onboarding Kit)</h6>
           <span style="font-size: 0.8rem; color: #14529d; font-weight: 600;">Mulai Rp 145.000</span>
@@ -411,7 +412,7 @@
 
     <li class="mb-3">
       <a href="paket-merchandise-promosi.html" class="d-flex align-items-center gap-3 text-dark text-decoration-none">
-        <img src="assets/img/paket/merchandise-promosi-brand.webp" alt="Merchandise Promosi Brand Perusahaan" style="width: 60px; height: 50px; object-fit: cover; border-radius: 8px;">
+        <img src="assets/img/paket/merchandise-promosi-brand.webp" alt="Merchandise Promosi Brand Perusahaan" style="width: 60px; height: 50px; object-fit: cover; border-radius: 8px;" loading="lazy" decoding="async">
         <div>
           <h6 class="mb-1" style="font-size: 0.9rem; font-weight: 700; color: #102a49;">Merchandise Promosi Brand Perusahaan</h6>
           <span style="font-size: 0.8rem; color: #14529d; font-weight: 600;">Mulai Rp 65.000</span>
@@ -422,7 +423,7 @@
 
     <li class="mb-3">
       <a href="paket-apparel-perusahaan.html" class="d-flex align-items-center gap-3 text-dark text-decoration-none">
-        <img src="assets/img/paket/custom-apparel-perusahaan.webp" alt="Custom Apparel & Seragam Perusahaan" style="width: 60px; height: 50px; object-fit: cover; border-radius: 8px;">
+        <img src="assets/img/paket/custom-apparel-perusahaan.webp" alt="Custom Apparel & Seragam Perusahaan" style="width: 60px; height: 50px; object-fit: cover; border-radius: 8px;" loading="lazy" decoding="async">
         <div>
           <h6 class="mb-1" style="font-size: 0.9rem; font-weight: 700; color: #102a49;">Custom Apparel & Seragam Perusahaan</h6>
           <span style="font-size: 0.8rem; color: #14529d; font-weight: 600;">Mulai Rp 115.000</span>
@@ -433,7 +434,7 @@
 
     <li class="mb-3">
       <a href="paket-merchandise-eco.html" class="d-flex align-items-center gap-3 text-dark text-decoration-none">
-        <img src="assets/img/paket/merchandise-ramah-lingkungan.webp" alt="Merchandise Ramah Lingkungan (Eco-Friendly Series)" style="width: 60px; height: 50px; object-fit: cover; border-radius: 8px;">
+        <img src="assets/img/paket/merchandise-ramah-lingkungan.webp" alt="Merchandise Ramah Lingkungan (Eco-Friendly Series)" style="width: 60px; height: 50px; object-fit: cover; border-radius: 8px;" loading="lazy" decoding="async">
         <div>
           <h6 class="mb-1" style="font-size: 0.9rem; font-weight: 700; color: #102a49;">Merchandise Ramah Lingkungan (Eco-Friendly Series)</h6>
           <span style="font-size: 0.8rem; color: #14529d; font-weight: 600;">Mulai Rp 95.000</span>
@@ -469,11 +470,11 @@
           </a>
           <p>Pusat pengadaan souvenir kantor, merchandise promosi, seminar kit, dan corporate hampers terpercaya di Surabaya. Menghadirkan solusi cinderamata berkelas dengan pengerjaan presisi dan pengiriman tepat waktu.</p>
           <div class="social-links d-flex mt-4">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" title="TikTok"><i class="bi bi-tiktok"></i></a>
-            <a href="https://wa.me/6288989643555" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Ikuti Kami di Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Ikuti Kami di Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" title="TikTok" aria-label="Ikuti Kami di TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="https://wa.me/6288989643555" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="Hubungi via WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="Kunjungi LinkedIn Kami"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -534,17 +535,14 @@
   </a>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke Atas"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
